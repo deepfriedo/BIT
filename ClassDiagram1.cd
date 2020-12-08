@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="WpfBITProject.ViewModels.AddClientViewModel">
+    <Position X="5.75" Y="1.5" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAEAHAAAAAAAAACAAAgAAAAAAAAAAAAQ=</HashCode>
+      <FileName>ViewModels\AddClientViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WpfBITProject.Models.Client" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAUAgEAACCgAAQgAiAEAqAAAAAAAAAACAgIAJCAAABk=</HashCode>
+      <FileName>Models\Client.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WpfBITProject.Models.Contractor" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>EAUAgEAACCgAYwgBGAEAqAAAAAAAAAAiEgIQJCAAABk=</HashCode>
+      <FileName>Models\Contractor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WpfBITProject.Models.Coordinator" Collapsed="true">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAUAgEAACCgAAQgACAEA6AAAAAAAAAACAgIAJCAAABk=</HashCode>
+      <FileName>Models\Coordinator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WpfBITProject.Models.Request" Collapsed="true">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AEEIgEAEEAgAISwAiAEAgAAAAABAAAAAAgIAgGAIAAg=</HashCode>
+      <FileName>Models\Request.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WpfBITProject.Models.Schedule" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AEEAgEAEAAAQIA4AEAEAQAIgAABBAAABAAIAgEAAAEg=</HashCode>
+      <FileName>Models\Schedule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WpfBITProject.Models.Skill" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Models\Skill.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WpfBITProject.Models.PreferredSuburb" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\PreferredSuburb.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WpfBITProject.Models.AvailableCandidate" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAgEAAAAAAAAwAEAAAAAAAAABAAAABAAAAAAAAAAg=</HashCode>
+      <FileName>Models\AvailableCandidate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WpfBITProject.Models.Availability" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Availability.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WpfBITProject.ViewModels.AddContractorViewModel">
+    <Position X="8.5" Y="1.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAHAAAAAAAAgKAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\AddContractorViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WpfBITProject.ViewModels.AddCoordinatorViewModel">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAHAAAAAAAAACAAggAAQAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\AddCoordinatorViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WpfBITProject.ViewModels.AddRequestViewModel">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAHQAAAAAAAACAAggAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\AddRequestViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WpfBITProject.ViewModels.AddScheduleViewModel">
+    <Position X="0.5" Y="9" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AEAAAABAAAgAAAABAEAAABAABAAAAABAAAAAAAAAAAg=</HashCode>
+      <FileName>ViewModels\AddScheduleViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WpfBITProject.ViewModels.AddSkillViewModel">
+    <Position X="9" Y="4.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>EAoAAAAAAAAARgADBAEAAAAAoCAMEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\AddSkillViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WpfBITProject.ViewModels.ClientViewModel">
+    <Position X="0.5" Y="5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>QAAAgEAAAAAAAAAEACUgAAAAAAAAAoAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\ClientViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WpfBITProject.ViewModels.ContractorViewModel">
+    <Position X="6.75" Y="5.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>QAAAgEAAIAAgAAAEIAAgAAQAgAACAhDAAAEAAAAAAAA=</HashCode>
+      <FileName>ViewModels\ContractorViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WpfBITProject.ViewModels.RequestViewModel">
+    <Position X="3" Y="8.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>QAgAgEAAAAAAAgAEQAAgAQIKCAAMAgAAAAACABAAAAA=</HashCode>
+      <FileName>ViewModels\RequestViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WpfBITProject.ViewModels.ScheduleViewModel">
+    <Position X="5" Y="5.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ZAhAgUAAAAAAcoAEAAAiEAgCCMAMAgAQAAAAAAEAAAA=</HashCode>
+      <FileName>ViewModels\ScheduleViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WpfBITProject.Views.AddClient">
+    <Position X="2.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\AddClient.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

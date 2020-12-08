@@ -1,0 +1,141 @@
+﻿<Page x:Class="WpfBITProject.Views.AddSchedule"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfBITProject.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="550" d:DesignWidth="800"
+      Title="AddSchedule">
+
+    <Page.Resources>
+        <Style TargetType="{x:Type Button}">
+
+            <Setter Property="FontSize" Value="17" />
+            <Setter Property="FontWeight" Value="DemiBold" />
+            <Setter Property="Margin" Value="0 10 0 10" />
+            <Setter Property="Height" Value="40" />
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="Foreground" Value="#c4c4ff" />
+            <Setter Property="BorderBrush" Value="#096b83" />
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+
+                        <Border Background="{TemplateBinding Background}" 
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="2">
+                            <ContentPresenter HorizontalAlignment="Center" 
+                                              VerticalAlignment="Center"/>
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" 
+                                     Value="True">
+                                <Setter Property="Background" 
+                                        Value="SteelBlue"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+
+        </Style>
+    </Page.Resources>
+
+    <Grid Margin="10 10 10 10">
+        <!--Main Grid Row-->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3.3*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="10"/>
+            <!--<RowDefinition Height="*"/>-->
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Border CornerRadius="2" BorderBrush="#096b83" BorderThickness="1" Grid.Row="0" Grid.ColumnSpan="2" Background="#096b83" Margin="10 0 10 0">
+            <!--Main Bar-->
+            <StackPanel>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="130"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="170"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Margin="10 0 0 0" Content="Requests" Foreground="White" FontSize="26" FontWeight="DemiBold"/>
+                    <Button Command="{Binding FindPendingCommand}" x:Name="btnPending" Content="Pending" Grid.Column="1"/>
+                    <Button Command="{Binding FindScheduledCommand}" x:Name="btnScheduled" Content="Scheduled" Grid.Column="2"/>
+
+                    <StackPanel Grid.Column="5" Grid.Row="0" Panel.ZIndex="1">
+                        <Image Source="search-solid.png" Height="22" Margin="0 13 125 0"></Image>
+                    </StackPanel>
+
+                    <Button Command="{Binding FindCommand}" x:Name="btnFindCandidate" Background="#053e4c" Foreground="White" Margin="0 0 0 10" Height="50" Content="      Find Candidate" Grid.Column="5" BorderBrush="#053e4c" BorderThickness="1"/>
+                </Grid>
+            </StackPanel>
+        </Border>
+
+        <DataGrid SelectedItem="{Binding SelectedRequest}" ItemsSource="{Binding Requests, Mode=TwoWay}" HorizontalGridLinesBrush="LightGray" VerticalGridLinesBrush="LightGray" AutoGenerateColumns="False" x:Name="dgRequest" Grid.ColumnSpan="2" Margin="10 0 10 10" Grid.Row="2" Background="White" BorderBrush="LightGray">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding RequestId}" Header="Request Id" Width="*"/>
+                <DataGridTextColumn Binding="{Binding ClientId}" Header="Client Id" Width="*"/>
+                <DataGridTextColumn Binding="{Binding SkillName}" Header="Skill Name" Width="1.5*"/>
+                <DataGridTextColumn Binding="{Binding Street}" Header="Street" Width="*"/>
+                <DataGridTextColumn Binding="{Binding Suburb}" Header="Suburb" Width="1.5*"/>
+                <DataGridTextColumn Binding="{Binding Postcode}" Header="Postcode" Width="*"/>
+                <DataGridTextColumn Binding="{Binding StartDate, StringFormat={}{0:MM/dd/yyyy}}" Header="Earliest Start Date" Width="1.5*"/>
+                <DataGridTextColumn Binding="{Binding DueDate, StringFormat={}{0:MM/dd/yyyy}}" Header="Due Date" Width="1.5*"/>
+                <DataGridTextColumn Binding="{Binding Comment}" Header="Comment" Width="*"/>
+                <DataGridTextColumn Binding="{Binding Status}" Header="Status" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Border CornerRadius="2" Grid.Row="3" Grid.ColumnSpan="1" Background="#096b83" BorderBrush="White" BorderThickness="2" Margin="10 0 10 0">
+            <StackPanel>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="160"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="170"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Margin="10 1 0 0" Content="Available Candidates" FontSize="24" FontWeight="DemiBold" Foreground="White" Grid.ColumnSpan="3"/>
+                </Grid>
+            </StackPanel>
+        </Border>
+
+        <Button Command="{Binding ConfirmCommand}" x:Name="btnConfirmCandidate" Margin="0 0 10 0" Height="50" Content="Confirm" Grid.Column="1" Grid.Row="3" Background="#053e4c" Foreground="White" BorderBrush="White" BorderThickness="2"/>
+
+        <DataGrid ItemsSource="{Binding AvailableCandidates, Mode=TwoWay}" SelectedItem="{Binding SelectedCandidate}" HorizontalGridLinesBrush="LightGray" VerticalGridLinesBrush="LightGray" x:Name="dgAvailableCandidates" Background="White" Grid.Row="4" Grid.ColumnSpan="1" Margin="10 10 10 10" BorderBrush="LightGray" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding RequestId}" Header="Request Id" Width="*"/>
+                <DataGridTextColumn Binding="{Binding ContractorId}" Header="Contractor Id" Width="*"/>
+                <DataGridTextColumn Binding="{Binding FirstName}" Header="First Name" Width="*"/>
+                <DataGridTextColumn Binding="{Binding LastName}" Header="Last Name" Width="*"/>
+                <DataGridTextColumn Binding="{Binding SkillName}" Header="Skill Name" Width="*"/>
+                <DataGridTextColumn Binding="{Binding Suburb}" Header="Suburb" Width="*"/>
+                <DataGridTextColumn Binding="{Binding AvailableDate, StringFormat={}{0:MM/dd/yyyy}}" Header="Available Date" Width="*"/>
+                <DataGridTextColumn Binding="{Binding WeekDayName}" Header="Day Name" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Border BorderBrush="LightGray" BorderThickness="1" Grid.Row="4" Grid.Column="1" Margin="0 10 10 10"/>
+
+    </Grid>
+</Page>
