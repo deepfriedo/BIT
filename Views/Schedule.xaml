@@ -87,7 +87,7 @@
             </StackPanel>
         </Border>
 
-        <Button x:Name="btnAddNewSchedule" Content="+ New" Grid.Column="7" Height="50" Margin="0 0 10 0" Background="#053e4c" Foreground="White" Click="btnAddNewSchedule_Click" BorderBrush="White" BorderThickness="1"/>
+        <Button x:Name="btnAddNewSchedule" Content="+ New!" Grid.Column="7" Height="50" Margin="0 0 10 0" Background="#053e4c" Foreground="White" Click="btnAddNewSchedule_Click" BorderBrush="White" BorderThickness="1"/>
 
         <DataGrid HorizontalGridLinesBrush="LightGray" VerticalGridLinesBrush="LightGray" SelectedItem="{Binding SelectedSchedule}" ItemsSource="{Binding Schedules, Mode=TwoWay}" AutoGenerateColumns="False" Background="White" BorderBrush="LightGray" Margin="10 10 10 10" Grid.Row="1" x:Name="dgSchedule" Grid.ColumnSpan="2">
             <DataGrid.Columns>
