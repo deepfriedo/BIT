@@ -74,7 +74,7 @@
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="200"/>
                     </Grid.ColumnDefinitions>
-                    <Label Margin="10 0 0 0" Content="Schedules" FontSize="26" Foreground="White" FontWeight="DemiBold"/>
+                    <Label Margin="10 0 0 0" Content="Schedules!" FontSize="26" Foreground="White" FontWeight="DemiBold"/>
 
                     <Button Command="{Binding FindScheduledCommand}" x:Name="btnScheduled" Content="Scheduled" Grid.Column="1"/>
                     <Button Command="{Binding FindRejectedCommand}" x:Name="btnRejected" Content="Rejected" Grid.Column="2"/>
