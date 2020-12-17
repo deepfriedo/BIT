@@ -78,6 +78,7 @@
     <Compile Include="Models\Availability.cs" />
     <Compile Include="Models\AvailableCandidate.cs" />
     <Compile Include="Models\AvailableCandidates.cs" />
+    <Compile Include="Models\BaseUser.cs" />
     <Compile Include="Models\CompletedSchedules.cs" />
     <Compile Include="Models\Coordinator.cs" />
     <Compile Include="Models\Client.cs" />
